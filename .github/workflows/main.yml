@@ -11,6 +11,6 @@ jobs:
               with: 
                 node-version: 18
             - name: install dependencies
-              run: npm insall
+              run: npm install
             - name: RUn Test for Nodejs
               run: npm test
