@@ -15,6 +15,7 @@ jobs:
             - name: RUn Test for Nodejs
               run: npm test
     Deploy:
+        needs: test  
         runs-on: ubuntu-latest
         steps:
             - name: Get the Code from Repo
