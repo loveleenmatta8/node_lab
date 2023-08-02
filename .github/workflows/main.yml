@@ -14,3 +14,20 @@ jobs:
               run: npm install
             - name: RUn Test for Nodejs
               run: npm test
+    Deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get the Code from Repo
+              uses: actions/checkout@v3
+            - name: install  nodejs
+              uses: actions/setup-node@v3
+              with: 
+                node-version: 18
+            - name: install dependencies
+              run: npm install
+            - name: RUn Test for Nodejs
+              run: npm test
+            - name: Build Project of NPM
+              run: npm run build
+            - name: Deployment of the code on server
+              run: echo " Deployment of the code is happening"
