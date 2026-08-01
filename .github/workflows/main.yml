@@ -9,7 +9,7 @@ jobs:
             - name: install  nodejs
               uses: actions/setup-node@v3
               with: 
-                node-version: 18
+                node-version: 24
             - name: install dependencies
               run: npm install
             - name: RUn Test for Nodejs
@@ -23,7 +23,7 @@ jobs:
             - name: install  nodejs
               uses: actions/setup-node@v3
               with: 
-                node-version: 18
+                node-version: 24
             - name: install dependencies
               run: npm install
             - name: RUn Test for Nodejs
